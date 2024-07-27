@@ -123,6 +123,14 @@ document.getElementById('myButton').addEventListener('click', function() {
             `<span style="animation-delay:${i * 0.1}s;">${letter}</span>`
         ).join('');
     });
+    document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey && e.key === 'c') || (e.ctrlKey && e.key === 'x') || (e.ctrlKey && e.key === 'v') || (e.ctrlKey && e.key === 'u') || (e.ctrlKey && e.key === 's')) {
+        e.preventDefault();
+    }
+});
 </script>
 
 </html>
