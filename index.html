@@ -21,8 +21,6 @@
         content="Explore free questions and quizzes from NCERT and ICSE textbooks for Class 6, 7, and 8 on QuizLeapBooks. Boost your exam preparation with our study resources." />
     <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2012/04/14/12/40/letter-q-33754_1280.png" />
-
 </head>
 
 <body>
@@ -55,8 +53,7 @@
     </section>
     <section class="scrolling-text-container">
         <div class="scrolling-text">
-            <h1 class="title-letter">Quiz Leap Books | Get free questions and quiz from NCERT and ICSE board of Class 6
-                ; Class 7 ; Class 8.</h1>
+            <h1 class="title-letter">Quiz Leap Books | Get free questions and quiz from NCERT and ICSE board of Class 6, Class 7, and Class 8.</h1>
         </div>
     </section>
     <section>
@@ -66,18 +63,14 @@
                     <a href="https://quizleapsbooks.github.io/NCERT_Quiz_Leap_Books/"><img alt="NCERT" src="https://cee.ncert.gov.in/public/images/1.jpg" class="image-1" width="100%"></a>
                 </div>
                 <h2><a class="underlineremover" href="https://quizleapsbooks.github.io/NCERT_Quiz_Leap_Books/">Click here to get NCERT Questions</a></h2>
-                <p class="font">Access a wide range of questions from NCERT textbooks for Classes 6, 7, and 8. Improve
-                    your understanding with diverse question types and quizzes.</p>
+                <p class="font">Access a wide range of questions from NCERT textbooks for Classes 6, 7, and 8. Improve your understanding with diverse question types and quizzes.</p>
             </div>
             <div class="pictureandtext1">
                 <div class="rounded-lg h-64 overflow-hidden">
-                    <a href="icse.html"><img alt="content"
-                            src="https://images.hindustantimes.com/img/2021/09/03/1600x900/13eca768-a19d-11eb-99e8-864a4eb6b705_1618898795816_1630645303525.jpg"
-                            width="100%" class="image"></a>
+                    <a href="icse.html"><img alt="ICSE" src="https://images.hindustantimes.com/img/2021/09/03/1600x900/13eca768-a19d-11eb-99e8-864a4eb6b705_1618898795816_1630645303525.jpg" width="100%" class="image"></a>
                 </div>
                 <h2><a class="underlineremover" href="/icse.html">Click here to get ICSE Questions</a></h2>
-                <p class="font">Explore a variety of questions from ICSE textbooks for Classes 6, 7, and 8. Find quizzes
-                    and practice questions to enhance your learning.</p>
+                <p class="font">Explore a variety of questions from ICSE textbooks for Classes 6, 7, and 8. Find quizzes and practice questions to enhance your learning.</p>
             </div>
         </div>
     </section>
@@ -91,10 +84,7 @@
         document.getElementById('myButton').addEventListener('click', function() {
             window.location.href = 'https://quizleapsbooks.github.io/Contact_Us_QuizLeapBooks/';
         });
-    </script>
-    
-</body>
-    <script>
+
         function toggleMenu() {
             const navbar = document.getElementById('navbar');
             navbar.classList.toggle('active');
@@ -109,30 +99,17 @@
                 `<span style="animation-delay:${i * 0.1}s;">${letter}</span>`
             ).join('');
         });
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey && e.key === 'c') || (e.ctrlKey && e.key === 'x') || (e.ctrlKey && e.key === 'v') || (e.ctrlKey && e.key === 'u') || (e.ctrlKey && e.key === 's')) {
+                e.preventDefault();
+            }
+        });
     </script>
-<script>
-document.getElementById('myButton').addEventListener('click', function() {
-    window.location.href = 'https://quizleapsbooks.github.io/Contact_Us_QuizLeapBooks/';
-});
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const titleElement = document.getElementById('dynamic-title');
-        const text = "Quiz Leap Books";
-        const textArray = text.split('');
 
-        titleElement.innerHTML = textArray.map((letter, i) =>
-            `<span style="animation-delay:${i * 0.1}s;">${letter}</span>`
-        ).join('');
-    });
-    document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey && e.key === 'c') || (e.ctrlKey && e.key === 'x') || (e.ctrlKey && e.key === 'v') || (e.ctrlKey && e.key === 'u') || (e.ctrlKey && e.key === 's')) {
-        e.preventDefault();
-    }
-});
-</script>
-
+</body>
 </html>
